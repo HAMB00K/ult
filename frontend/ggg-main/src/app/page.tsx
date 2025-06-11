@@ -303,8 +303,8 @@ export default function LandingPage() {
             <Image
               src="https://placehold.co/800x1000.png"
               alt="Abstract cybersecurity visual"
-              layout="fill"
-              objectFit="contain"
+              fill
+              style={{ objectFit: "contain" }}
               className="opacity-80"
               data-ai-hint="abstract purple glow"
             />
