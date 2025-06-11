@@ -276,10 +276,16 @@ export default function LandingPage() {
             className="relative w-[300px] h-[400px] md:w-[400px] md:h-[500px] lg:w-[500px] lg:h-[600px] animate-float-subtle"
             style={{ animationDuration: "8s" }}
           >
-            <Spline
-              scene="https://prod.spline.design/U2klF6n-tLAYx4Gs/scene.splinecode"
-              className="absolute inset-0 w-full h-full object-contain opacity-80"
-            />
+            <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 via-purple-500/10 to-accent/20 rounded-2xl backdrop-blur-sm border border-primary/30">
+              <div className="text-center space-y-4">
+                <div className="w-24 h-24 mx-auto rounded-full bg-primary/20 flex items-center justify-center animate-pulse">
+                  <ShieldAlert className="w-12 h-12 text-primary" />
+                </div>
+                <p className="text-sm text-primary/80 font-medium">
+                  Cybersecurity Hub
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
