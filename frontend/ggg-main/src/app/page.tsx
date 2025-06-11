@@ -8,7 +8,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
-import Spline from "@splinetool/react-spline";
 
 interface FeatureCardProps {
   icon: React.ElementType;
