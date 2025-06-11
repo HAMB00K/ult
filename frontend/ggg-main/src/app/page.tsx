@@ -276,24 +276,9 @@ export default function LandingPage() {
             className="relative w-[300px] h-[400px] md:w-[400px] md:h-[500px] lg:w-[500px] lg:h-[600px] animate-float-subtle"
             style={{ animationDuration: "8s" }}
           >
-            <Image
-              src="https://placehold.co/800x1000.png"
-              alt="Abstract cybersecurity visual"
-              fill
-              style={{ objectFit: "contain" }}
-              className="opacity-80"
-              data-ai-hint="abstract purple glow"
-            />
-            <DecorativeHoop
-              size={150}
-              position="top-[5%] left-[0%]"
-              animationDuration="20s"
-            />
-            <DecorativeHoop
-              size={200}
-              position="bottom-[10%] right-[10%]"
-              animationDuration="25s"
-              animationName="animate-spin-slow"
+            <Spline
+              scene="https://prod.spline.design/U2klF6n-tLAYx4Gs/scene.splinecode"
+              className="absolute inset-0 w-full h-full object-contain opacity-80"
             />
           </div>
         </div>
