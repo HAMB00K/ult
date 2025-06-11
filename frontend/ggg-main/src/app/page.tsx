@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/Logo";
 import { ArrowRight, Mic, Brain, ShieldAlert, UserCheck } from "lucide-react";
@@ -9,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
+import Spline from "@splinetool/react-spline";
 
 interface FeatureCardProps {
   icon: React.ElementType;
