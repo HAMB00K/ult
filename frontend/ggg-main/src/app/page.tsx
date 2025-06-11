@@ -124,30 +124,6 @@ function TeamMemberCard({
   );
 }
 
-const DecorativeHoop = ({
-  size,
-  position,
-  animationDuration,
-  animationName = "animate-spin-slow",
-}: {
-  size: number;
-  position: string;
-  animationDuration: string;
-  animationName?: string;
-}) => {
-  return (
-    <div
-      className={`absolute ${animationName} ${position} pointer-events-none opacity-30 md:opacity-50 z-0`}
-      style={{ animationDuration }}
-    >
-      <div
-        className="rounded-full border-4 border-primary/30 bg-gradient-to-r from-primary/20 via-transparent to-primary/10"
-        style={{ width: size, height: size }}
-      />
-    </div>
-  );
-};
-
 export default function LandingPage() {
   const featuresData: Omit<
     FeatureCardProps,
